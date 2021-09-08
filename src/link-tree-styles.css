@@ -1,0 +1,26 @@
+/* Mobile view */
+
+.info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.image {
+    border-radius: 50%;
+    display: block;
+    height: 96px;
+    margin-bottom: 16px;
+    width: 96px;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+}
+
+.username {
+    font-family: monospace;
+    font-size: 16px;
+}
