@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+/* Mobile view */
+
+.bio {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 1px 40px 0 40px;
+    text-align: center;
+}
+
+.bio, .username {
+    font-family: 'Karla', sans-serif;
+}
+
+.info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.image {
+    border-radius: 50%;
+    height: 96px;
+    margin-bottom: 7px;
+    width: 96px;
+}
+
+.username {
+    font-size: 16px;
+}
