@@ -1,0 +1,18 @@
+.hide {
+    visibility: hidden;
+}
+
+.link {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+}
+
+.link-item {
+    background-color: #4f7cfe;
+    border: 2px solid rgb(79, 124, 254);
+    margin: 0 4px 16px 4px;
+}
