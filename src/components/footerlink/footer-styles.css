@@ -1,0 +1,22 @@
+/* Mobile view */
+
+.btn-svg {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.linktree-svg {
+    height: 100%;
+    width: 36.5%;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    width: 100%;
+}
