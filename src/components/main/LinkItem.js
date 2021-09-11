@@ -7,7 +7,7 @@ const LinkItem = ({ link, icon, linklabel }) => {
 	return (
 		<section className='link-item'>
 			<a className='link' href={link} target='_blank' rel='noreferrer'>
-				<img src={icon} alt={`${linklabel} link`} />
+				<img className='icon' src={icon} alt={`${linklabel} link`} />
 				<p>{linklabel}</p>
 				<p className='hide'>hiding</p>
 			</a>
