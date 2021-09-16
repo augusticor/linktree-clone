@@ -8,13 +8,13 @@ import './link-tree.css';
 
 const LinkTree = () => {
 	return (
-		<>
+		<div className='linktree'>
 			<HeaderInfo />
 
 			<LinksGrid />
 
 			<FooterLink />
-		</>
+		</div>
 	);
 };
 

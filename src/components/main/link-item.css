@@ -7,19 +7,24 @@
 .icon {
     filter: invert(100%) sepia(37%) saturate(103%) hue-rotate(258deg) brightness(113%) contrast(300%);
     height: 32px;
-    position: relative;
-    transform: translateX(-75%);
     width: 32px;
+}
+
+.icon-alignment {
+    display: flex;
+    padding-left: 9px;
+    width: 100%;
 }
 
 .link {
     align-items: center;
     color: white;
-    display: flex;
+    display: grid;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
+    grid-template: 100% / 16% 68% 16%;
     height: 100%;
-    justify-content: space-around;
+    justify-items: center;
     text-decoration: none;
 }
 
@@ -28,13 +33,19 @@
     border: 2px solid #4f7cfe;
 }
 
+.link-item:hover {
+    background-color: transparent;
+}
+
 .link-item, .social-item {
     margin: 0 4px 16px 4px;
     padding: 2px 0;
 }
 
 .links-grid {
+    margin-top: 32px;
     padding-bottom: 80px;
+    width: 100%;
 }
 
 .social-item {

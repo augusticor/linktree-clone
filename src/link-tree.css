@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+/*  */
+
+.linktree {
+    max-width: 680px;
+    width: 100%;
+}
+
+.linktree, #root {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
