@@ -1,9 +1,11 @@
-# 🌳 Linktr.ee clone 🌳
+# 🌳 Linktr.ee clone
 
 A single page clone of my official linktr.ee website https://linktr.ee/augusticor
 
 - Original website: https://linktr.ee/augusticor
 - Clone website: https://augusticor.github.io/linktree-clone/
+
+![GitHub actions workflow status](https://github.com/augusticor/linktree-clone/actions/workflows/react.js.yml/badge.svg)
 
 ## What is linktr.ee ?
 
@@ -15,10 +17,12 @@ Linktree allows to create a personalised and easily-customizable page, that hous
 
 In the project directory, you can run:
 
-### npm start
+### npm run dev
 
 Runs the app in the development mode [http://localhost:3000](http://localhost:3000)
 
-### npm test
+### npm run test
 
 Runs the test of the application, four test suits
+
+npm install -D @testing-library/jest-dom @testing-library/react @testing-library/user-event @wojtekmaj/enzyme-adapter-react-17 enzyme enzyme-to-json
