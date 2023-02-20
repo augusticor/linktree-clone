@@ -18,11 +18,13 @@ jobs:
       - name: Test project
         run: npm run test
   build:
+    runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Build application
         run: npm run build
   deploy:
+    runs-on: ubuntu-latest
     needs: [test, build]
     steps:
       - name: Deploy on GH actions
