@@ -22,12 +22,6 @@ export const linksInfo = [
 		label: 'YouTube',
 	},
 	{
-		id: 'link-twitter',
-		link: 'https://twitter.com/augusticor',
-		icon: `${assetsBaseURL}${brandUrl}twitter.svg`,
-		label: 'Twitter',
-	},
-	{
 		id: 'link-duolingo',
 		link: 'https://www.duolingo.com/profile/augusticor',
 		icon: `${assetsBaseURL}language.svg`,

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './link-item.css';
 
 const LinkItem = ({ link, icon, linklabel }) => {
