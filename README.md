@@ -13,7 +13,14 @@ Linktree allows to create a personalised and easily-customizable page, that hous
 
 ![](https://edteam-media.s3.amazonaws.com/community/original/6cfb219f-faa7-4a2a-b25b-83ecddcf27b8.jpg)
 
+## Tech Stack
+- Frontend: [React](https://beta.reactjs.org/)
+- Unit Tests: [Vitest](https://vitest.dev/)
+- Bundler: [Vite](https://vitejs.dev/)
+
 ## How to use this project
+
+This project was originally created using [create-react-app](https://create-react-app.dev/) but in 2023 migrated to [Vite](https://vitejs.dev/).
 
 In the project directory, you can run:
 
@@ -23,6 +30,8 @@ Runs the app in the development mode [http://localhost:3000](http://localhost:30
 
 ### npm run test
 
-Runs the test of the application, four test suits
+Runs the test of the application, four test suits using [Vitest](https://vitest.dev/). Yes migrated from enzyme to Vitest.
 
-npm install -D @testing-library/jest-dom @testing-library/react @testing-library/user-event @wojtekmaj/enzyme-adapter-react-17 enzyme enzyme-to-json
+### npm run build
+
+Builds the production ready app version

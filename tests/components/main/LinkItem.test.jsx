@@ -1,33 +1,33 @@
-import { shallow } from 'enzyme';
-
-import LinkItem from '../../../components/main/LinkItem';
-import { linksInfo } from '../../../data/links-data';
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
+import { linksInfo } from '../../../src/data/links-data';
+import LinkItem from '../../../src/components/main/LinkItem';
 
 describe('Tests on <LinkItem /> component', () => {
-	test('Should match default values snapshot', () => {
-		const wrapper = shallow(<LinkItem />);
-		expect(wrapper).toMatchSnapshot();
-	});
+  it('Should render default values if no props', () => {
+    render(<LinkItem />);
+    expect(screen.getByRole('link').getAttribute('href')).toBe('https://linktr.ee/');
+    expect(screen.getByRole('img').getAttribute('src')).toBe(
+      linksInfo[linksInfo.length - 1].icon
+    );
+    expect(screen.getByRole('img').getAttribute('alt')).toBe('Linkt.ree link');
+    expect(screen.getByTestId('linklabel').textContent).toBe('Linkt.ree');
+  });
 
-	test('Should render default values if no props', () => {
-		const wrapper = shallow(<LinkItem />);
+  it('Should match correct snapshot and render LinkedIn info correctly', () => {
+    const linkedinInfo = linksInfo[0];
 
-		expect(wrapper.find('a').prop('href')).toBe('https://linktr.ee/');
-		expect(wrapper.find('.icon').prop('src')).toBe(linksInfo[linksInfo.length - 1].icon);
-		expect(wrapper.find('.icon').prop('alt')).toBe('Linkt.ree link');
-		expect(wrapper.find('p').first().text()).toBe('Linkt.ree');
-	});
+    render(
+      <LinkItem
+        link={linkedinInfo.link}
+        icon={linkedinInfo.icon}
+        linklabel={linkedinInfo.label}
+      />
+    );
 
-	test('Should match correct snapshot and render linkedin info correctly', () => {
-		const linkedinInfo = linksInfo[0];
-
-		const wrapper = shallow(<LinkItem link={linkedinInfo.link} icon={linkedinInfo.icon} linklabel={linkedinInfo.label} />);
-
-		expect(wrapper).toMatchSnapshot();
-
-		expect(wrapper.find('a').prop('href')).toBe(linkedinInfo.link);
-		expect(wrapper.find('.icon').prop('src')).toBe(linkedinInfo.icon);
-		expect(wrapper.find('.icon').prop('alt')).toBe(`${linkedinInfo.label} link`);
-		expect(wrapper.find('p').first().text()).toBe(linkedinInfo.label);
-	});
+    expect(screen.getByRole('link').getAttribute('href')).toBe(linkedinInfo.link);
+    expect(screen.getByRole('img').getAttribute('src')).toBe(linkedinInfo.icon);
+    expect(screen.getByRole('img').getAttribute('alt')).toBe(`${linkedinInfo.label} link`);
+    expect(screen.getByTestId('linklabel').textContent).toBe(linkedinInfo.label);
+  });
 });

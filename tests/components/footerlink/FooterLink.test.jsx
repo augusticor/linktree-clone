@@ -1,13 +1,15 @@
-import { shallow } from 'enzyme';
-import FooterLink from '../../../components/footerlink/FooterLink';
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
+import FooterLink from '../../../src/components/footerlink/FooterLink';
 
 describe('Tests on <FooterLink /> component', () => {
-	const wrapper = shallow(<FooterLink />);
+  it('Should match snapshot', () => {
+    const footerLink = render(<FooterLink />);
+    expect(footerLink).toMatchSnapshot();
+  });
 
-	test('Should match snapshot', () => expect(wrapper).toMatchSnapshot());
-
-	test('Should find an svg', () => {
-		expect(wrapper.find('svg').exists()).toBeTruthy();
-		expect(wrapper.find('svg').length).toBe(1);
-	});
+  it('Should find an svg', () => {
+    render(<FooterLink />);
+    expect(screen.getByTestId('BlackGreenLogo')).to.exist;
+  });
 });
