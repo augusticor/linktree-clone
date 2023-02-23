@@ -12,6 +12,7 @@ __snapshots__
 # production
 /build
 dist
+copy.yml
 
 # misc
 .DS_Store
