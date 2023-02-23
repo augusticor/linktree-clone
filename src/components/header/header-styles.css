@@ -4,7 +4,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 4px;
+  margin-top: 7px;
+  margin: 7px 0 0 0;
   text-align: center;
 }
 
@@ -23,8 +24,8 @@
   font-size: 14px;
   font-weight: 500;
   grid-template-columns: 1fr 2fr;
-  padding: 10px 16px;
   height: 40px;
+  padding: 10px 16px;
 }
 
 .btn-follow,
@@ -68,7 +69,7 @@
 
 .image {
   height: 96px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   width: 96px;
 }
 
