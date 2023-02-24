@@ -1,9 +1,41 @@
+import { useEffect, useRef } from 'react';
 import './header-styles.css';
 
 const HeaderInfo = () => {
+  const firstScroll = useRef(false);
+  const iconsHeader = useRef();
+
+  const applyClasses = () => {
+    iconsHeader.current.classList.add('icons-header-scroll');
+  };
+
+  const removeClasses = () => {
+    iconsHeader.current.classList.remove('icons-header-scroll');
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === 0) {
+        firstScroll.current = false;
+        removeClasses();
+      }
+
+      if (window.scrollY > 50) {
+        if (!firstScroll.current) {
+          firstScroll.current = true;
+          applyClasses();
+        }
+      }
+    });
+
+    return () => {
+      window.removeEventListener('scroll');
+    };
+  }, []);
+
   return (
     <header className='info'>
-      <div className='icons-header'>
+      <div className='icons-header' ref={iconsHeader}>
         <button className='btn-share'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -22,6 +54,13 @@ const HeaderInfo = () => {
             <line x1='12' y1='4' x2='12' y2='16' />
           </svg>
         </button>
+
+        <img
+          className='tinyimage'
+          src='https://d1fdloi71mui9q.cloudfront.net/7TrNrWjiTk6X2Y3iJnXE_QlLnDOA3CHLK0c8j'
+          alt='User profile photography'
+          role='presentation'
+        />
 
         <button className='btn-follow'>
           <svg

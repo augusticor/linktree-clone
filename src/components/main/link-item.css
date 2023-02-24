@@ -62,7 +62,7 @@
 
 .links-grid {
   margin-top: 32px;
-  width: 100%;
+  width: 96%;
 }
 
 .social-item {
@@ -80,4 +80,11 @@
   fill: #2665d6;
   height: 32px;
   width: 32px;
+}
+
+/*  */
+@media screen and (min-width: 601px) {
+  .links-grid {
+    width: 100%;
+  }
 }
