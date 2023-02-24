@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:run": "vitest run -u"
+    "test:run": "vitest run -u",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
     "@vitejs/plugin-react-swc": "^3.2.0",
+    "@vitest/ui": "^0.28.5",
     "happy-dom": "^8.7.1",
     "vite": "^4.1.3",
     "vitest": "^0.28.5"

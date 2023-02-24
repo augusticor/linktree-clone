@@ -10,6 +10,7 @@ const FooterLink = () => {
           width={92}
           height='100%'
           xmlns='http://www.w3.org/2000/svg'
+          data-testid='BlackGreenLogo'
         >
           <title>Linktree</title>
           <path

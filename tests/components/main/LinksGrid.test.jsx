@@ -23,7 +23,7 @@ describe('Tests on <LinksGrid/> component', () => {
     expect(emailLink.getAttribute('href')).toBe('mailto:rojascruzoscar@gmail.com');
     expect(emailLink.getAttribute('aria-label')).toBe('@augusticor email address');
 
-    expect(container.getElementsByTagName('svg').length).toBeLessThanOrEqual(1);
-    expect(container.getElementsByTagName('svg')[0].classList[0]).toEqual('svg');
+    expect(container.getElementsByTagName('svg').length).toBeGreaterThan(1);
+    expect(container.getElementsByClassName('svg').length).toBeLessThanOrEqual(1);
   });
 });

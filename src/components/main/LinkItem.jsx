@@ -1,6 +1,6 @@
 const LinkItem = ({
   link = 'https://linktr.ee/',
-  icon = 'https://assets.production.linktr.ee/ef928851e29399340d4af70da9c77a3f60e5afad/icons/tabler-icons/trees.svg',
+  icon = 'https://assets.production.linktr.ee/d04573735aa5439503f9b5fb5928e289c03e29e0/icons/tabler-icons/trees.svg',
   linklabel = 'Linkt.ree',
 }) => {
   return (
