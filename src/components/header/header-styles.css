@@ -22,7 +22,7 @@
   display: grid;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   grid-template-columns: 1fr 2fr;
   height: 40px;
   padding: 10px 16px;
@@ -30,6 +30,7 @@
 
 .btn-follow,
 .btn-share {
+  justify-items: center;
   border: 1px solid #e2e2e2;
   transition: background-color 150ms ease;
 }

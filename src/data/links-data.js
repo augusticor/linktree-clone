@@ -1,4 +1,6 @@
-const assetsBaseURL = 'https://assets.production.linktr.ee/ef928851e29399340d4af70da9c77a3f60e5afad/icons/tabler-icons/';
+const baseUrlID = 'd04573735aa5439503f9b5fb5928e289c03e29e0'
+
+const assetsBaseURL = `https://assets.production.linktr.ee/${baseUrlID}/icons/tabler-icons/`;
 
 const brandUrl = 'brand-';
 
