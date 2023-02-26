@@ -5,31 +5,23 @@ const HeaderInfo = () => {
   const firstScroll = useRef(false);
   const iconsHeader = useRef();
 
-  const applyClasses = () => {
-    iconsHeader.current.classList.add('icons-header-scroll');
-  };
-
-  const removeClasses = () => {
-    iconsHeader.current.classList.remove('icons-header-scroll');
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const onPageScroll = () => {
       if (window.scrollY === 0) {
         firstScroll.current = false;
-        removeClasses();
+        iconsHeader.current.classList.remove('icons-header-scroll');
       }
 
-      if (window.scrollY > 50) {
-        if (!firstScroll.current) {
-          firstScroll.current = true;
-          applyClasses();
-        }
+      if (window.scrollY > 50 && !firstScroll.current) {
+        firstScroll.current = true;
+        iconsHeader.current.classList.add('icons-header-scroll');
       }
-    });
+    };
+
+    window.addEventListener('scroll', onPageScroll);
 
     return () => {
-      window.removeEventListener('scroll');
+      window.removeEventListener('scroll', onPageScroll);
     };
   }, []);
 
@@ -58,7 +50,7 @@ const HeaderInfo = () => {
         <img
           className='tinyimage'
           src='https://d1fdloi71mui9q.cloudfront.net/7TrNrWjiTk6X2Y3iJnXE_QlLnDOA3CHLK0c8j'
-          alt='User profile photography'
+          alt='User linktree profile photography'
           role='presentation'
         />
 
