@@ -18,6 +18,8 @@ Linktree allows to create a personalised and easily-customizable page, that hous
 - Unit Tests: [Vitest](https://vitest.dev/)
 - Bundler: [Vite](https://vitejs.dev/)
 
+Last updated on: February 2023
+
 ## How to use this project
 
 This project was originally created using [create-react-app](https://create-react-app.dev/) but in 2023 migrated to [Vite](https://vitejs.dev/).
