@@ -5,8 +5,14 @@ import './link-item.css';
 const LinksGrid = () => {
   return (
     <main className='links-grid'>
-      {linksInfo.map(({ id, link, icon, label }) => (
-        <LinkItem key={id} link={link} icon={icon} linklabel={label} />
+      {linksInfo.map(({ id, link, icon, label, extraImgStyles }) => (
+        <LinkItem
+          key={id}
+          link={link}
+          icon={icon}
+          linklabel={label}
+          extraImgStyles={extraImgStyles}
+        />
       ))}
 
       <div className='social-item' data-testid='emailtosvg'>

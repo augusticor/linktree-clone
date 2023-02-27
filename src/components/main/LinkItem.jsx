@@ -2,11 +2,12 @@ const LinkItem = ({
   link = 'https://linktr.ee/',
   icon = 'https://assets.production.linktr.ee/d04573735aa5439503f9b5fb5928e289c03e29e0/icons/tabler-icons/trees.svg',
   linklabel = 'Linkt.ree',
+  extraImgStyles = {},
 }) => {
   return (
     <section className='link-item'>
       <a className='link' href={link} target='_blank' rel='noreferrer'>
-        <img className='icon' src={icon} alt={`${linklabel} link`} />
+        <img className='icon' src={icon} alt={`${linklabel} link`} style={extraImgStyles} />
         <p data-testid='linklabel'>{linklabel}</p>
         <button className='btn-sharesvg'>
           <svg
