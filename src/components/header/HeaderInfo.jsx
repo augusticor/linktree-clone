@@ -49,7 +49,7 @@ const HeaderInfo = () => {
 
         <img
           className='tinyimage'
-          src='https://d1fdloi71mui9q.cloudfront.net/7TrNrWjiTk6X2Y3iJnXE_QlLnDOA3CHLK0c8j'
+          src='https://ugc.production.linktr.ee/0c8419f4-7675-4b8c-9559-763f0ee61307_q6yLzcez3aeKAMygKya8W8.jpeg?io=true&size=avatar-v3_0'
           alt='User linktree profile photography'
           role='presentation'
         />
@@ -77,7 +77,7 @@ const HeaderInfo = () => {
 
       <img
         className='image'
-        src='https://d1fdloi71mui9q.cloudfront.net/7TrNrWjiTk6X2Y3iJnXE_QlLnDOA3CHLK0c8j'
+        src='https://ugc.production.linktr.ee/0c8419f4-7675-4b8c-9559-763f0ee61307_q6yLzcez3aeKAMygKya8W8.jpeg?io=true&size=avatar-v3_0'
         alt='User profile photography'
       />
       <h1 className='username'>@augusticor</h1>
