@@ -1,49 +1,17 @@
-import { useEffect, useRef } from 'react';
 import './header-styles.css';
 
 const HeaderInfo = () => {
-  const firstScroll = useRef(false);
-  const iconsHeader = useRef();
-
-  useEffect(() => {
-    const onPageScroll = () => {
-      if (window.scrollY === 0) {
-        firstScroll.current = false;
-        iconsHeader.current.classList.remove('icons-header-scroll');
-      }
-
-      if (window.scrollY > 50 && !firstScroll.current) {
-        firstScroll.current = true;
-        iconsHeader.current.classList.add('icons-header-scroll');
-      }
-    };
-
-    window.addEventListener('scroll', onPageScroll);
-
-    return () => {
-      window.removeEventListener('scroll', onPageScroll);
-    };
-  }, []);
-
   return (
     <header className='info'>
-      <div className='icons-header' ref={iconsHeader}>
+      <div className='icons-header'>
         <button className='btn-share'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={20}
-            height={20}
-            viewBox='0 0 24 24'
-            strokeWidth={1.0}
-            stroke='#0a0b0d'
-            fill='none'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          >
-            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-            <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
-            <polyline points='7 9 12 4 17 9' />
-            <line x1='12' y1='4' x2='12' y2='16' />
+          <svg width='20' height='20' className='w-5 h-5' viewBox='0 0 16 19' fill='none'>
+            <path
+              d='M6.36667 15.3667V15.9C6.36667 16.7837 7.08301 17.5 7.96667 17.5C8.85032 17.5 9.56667 16.7837 9.56667 15.9V15.3667M2.1 13.7667C2.1 14.6503 1.38366 15.3667 0.5 15.3667H15.4333C14.5497 15.3667 13.8333 14.6503 13.8333 13.7667V9.5C13.8333 6.25993 12.8067 3.63333 9.56667 3.63333V3.1C9.56667 2.21634 8.85032 1.5 7.96667 1.5C7.08301 1.5 6.36667 2.21634 6.36667 3.1V3.63333C3.1266 3.63333 2.1 6.25993 2.1 9.5L2.1 13.7667Z'
+              stroke='currentColor'
+              strokeWidth='1.5'
+              strokeLinejoin='bevel'
+            ></path>
           </svg>
         </button>
 
@@ -55,23 +23,23 @@ const HeaderInfo = () => {
         />
 
         <button className='btn-follow'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-            strokeWidth='1'
-            stroke='#000000'
-            fill='#000000'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          >
-            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-            <path d='M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6' />
-            <path d='M9 17v1a3 3 0 0 0 6 0v-1' />
+          <svg width='16' height='16' viewBox='0 0 16 16'>
+            <path
+              fill='white'
+              stroke='white'
+              d='M12.6661 7.33348C12.2979 7.33348 11.9994 7.63195 11.9994 8.00014C11.9994 8.36833 12.2979 8.66681 12.6661 8.66681C13.0343 8.66681 13.3328 8.36833 13.3328 8.00014C13.3328 7.63195 13.0343 7.33348 12.6661 7.33348Z'
+            ></path>
+            <path
+              fill='white'
+              stroke='white'
+              d='M8.00057 7.33348C7.63238 7.33348 7.3339 7.63195 7.3339 8.00014C7.3339 8.36833 7.63238 8.66681 8.00057 8.66681C8.36876 8.66681 8.66724 8.36833 8.66724 8.00014C8.66724 7.63195 8.36876 7.33348 8.00057 7.33348Z'
+            ></path>
+            <path
+              fill='white'
+              stroke='white'
+              d='M3.33333 7.33348C2.96514 7.33348 2.66667 7.63195 2.66667 8.00014C2.66667 8.36833 2.96514 8.66681 3.33333 8.66681C3.70152 8.66681 4 8.36833 4 8.00014C4 7.63195 3.70152 7.33348 3.33333 7.33348Z'
+            ></path>
           </svg>
-
-          <p>Subscribe</p>
         </button>
       </div>
 

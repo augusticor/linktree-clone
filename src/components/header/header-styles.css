@@ -1,6 +1,7 @@
 /* Mobile view */
 
 .bio {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -14,42 +15,22 @@
   font-family: 'Inter', sans-serif;
 }
 
-.btn-follow {
-  align-content: center;
-  align-items: center;
-  border-radius: 20px;
-  color: #0a0b0d;
-  display: grid;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  grid-template-columns: 1fr 2fr;
-  height: 40px;
-  padding: 10px 16px;
-}
-
 .btn-follow,
 .btn-share {
-  justify-items: center;
-  border: 1px solid #e2e2e2;
-  transition: background-color 150ms ease;
-}
-
-.btn-follow,
-.btn-share:hover {
-  background-color: #ebebeb;
+  color: #fff;
   cursor: pointer;
+  background-color: rgba(26, 26, 26, 0.35);
+  border: none;
 }
 
 .btn-share {
   align-items: center;
   display: flex;
-  height: 40px;
   justify-content: center;
-  width: 40px;
 }
 
 .btn-share,
+.btn-follow,
 .image,
 .tinyimage {
   border-radius: 50%;
@@ -62,43 +43,8 @@
   justify-content: space-between;
   position: fixed;
   top: 7px;
-  width: 90%;
+  width: 60%;
 }
-
-/* Scroll classes |v */
-.icons-header-scroll {
-  backdrop-filter: blur(10px);
-  background-color: rgb(255 255 255 / 50%);
-  border-radius: 72px;
-  border: 1px solid #ebeef1;
-}
-
-.icons-header-scroll button {
-  background-color: black;
-  border: 1px solid black;
-}
-
-.icons-header-scroll .btn-follow {
-  grid-template-columns: 100% 0%;
-}
-
-.icons-header-scroll .btn-follow p {
-  display: none;
-}
-
-.icons-header-scroll .btn-follow svg {
-  fill: white;
-}
-
-.icons-header-scroll .tinyimage {
-  display: block;
-}
-
-.icons-header-scroll svg {
-  stroke: white;
-}
-
-/* Scroll classes |^ */
 
 .info {
   align-items: center;
@@ -130,18 +76,18 @@
 @media screen and (min-width: 1024px) {
   .icons-header {
     top: 15px;
-    width: 75%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .icons-header {
-    width: 65%;
+    width: 48%;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .icons-header {
-    width: 60%;
+    width: 37%;
   }
 }
