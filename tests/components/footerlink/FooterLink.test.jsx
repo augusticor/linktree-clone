@@ -8,8 +8,10 @@ describe('Tests on <FooterLink /> component', () => {
     expect(footerLink).toMatchSnapshot();
   });
 
-  it('Should find an svg', () => {
+  it('Should find an anchor tag for join augusticor', () => {
     render(<FooterLink />);
-    expect(screen.getByTestId('BlackGreenLogo')).to.exist;
+    const anchorLink = screen.getByRole('link');
+    expect(screen.getByRole('link')).to.exist;
+    expect(anchorLink.textContent).toBe('Join augusticor on Linktree');
   });
 });
