@@ -1,20 +1,35 @@
 /* Mobile view */
 
-.btn-svg {
-  display: contents;
+.btn-join {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.btn-join:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 .cookies {
   background: transparent;
   border: none;
   bottom: 14px;
+  color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   font-family: Inter;
   font-size: 9px;
   font-weight: 300;
   left: 10px;
   position: fixed;
-  text-decoration: underline;
+}
+
+.cookies:hover {
+  color: white;
+  font-weight: 500;
 }
 
 .footer {

@@ -23,12 +23,6 @@
   border: none;
 }
 
-.btn-share {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .btn-share,
 .btn-follow,
 .image,
@@ -38,12 +32,16 @@
 
 .icons-header {
   align-items: center;
-  padding: 13px 10px;
+  padding: 22px 10px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 7px;
   width: 60%;
+}
+
+.icons-header-scroll {
+  display: none;
 }
 
 .info {
