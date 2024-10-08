@@ -39,3 +39,15 @@
   width: 100%;
   padding-bottom: 50px;
 }
+
+.lastupdated {
+  bottom: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 9px;
+  font-weight: 300;
+  position: fixed;
+  right: 13px;
+  text-decoration: none;
+}

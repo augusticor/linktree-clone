@@ -8,6 +8,14 @@ const FooterLink = () => {
       </a>
 
       <button className='cookies'>Cookie Preferences</button>
+      <a
+        className='lastupdated'
+        href='https://github.com/augusticor/linktree-clone'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Last updated: October 2024
+      </a>
     </footer>
   );
 };

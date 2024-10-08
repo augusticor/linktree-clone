@@ -14,11 +14,11 @@ Linktree allows to create a personalised and easily-customizable page, that hous
 ![](https://edteam-media.s3.amazonaws.com/community/original/6cfb219f-faa7-4a2a-b25b-83ecddcf27b8.jpg)
 
 ## Tech Stack
-- Frontend: [React](https://beta.reactjs.org/)
+- Frontend: [React](https://react.dev/)
 - Unit Tests: [Vitest](https://vitest.dev/)
-- Bundler: [Vite](https://vitejs.dev/)
+- Bundler: [Vite](https://vite.dev/)
 
-Last updated on: February 2023
+Last updated on: October 2024
 
 ## How to use this project
 
