@@ -10,8 +10,15 @@ describe('Tests on <FooterLink /> component', () => {
 
   it('Should find an anchor tag for join augusticor', () => {
     render(<FooterLink />);
-    const anchorLink = screen.getByRole('link');
-    expect(screen.getByRole('link')).to.exist;
+    const anchorLink = screen.getAllByRole('link').at(0);
+    expect(anchorLink).to.exist;
     expect(anchorLink.textContent).toBe('Join augusticor on Linktree');
+  });
+
+  it('Should find an anchor tag of last updated on', () => {
+    render(<FooterLink />);
+    const anchorLink = screen.getAllByRole('link').at(1);
+    expect(anchorLink).to.exist;
+    expect(anchorLink.textContent).toMatch(/Last updated: \w/);
   });
 });

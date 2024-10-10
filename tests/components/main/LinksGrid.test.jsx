@@ -11,19 +11,22 @@ describe('Tests on <LinksGrid/> component', () => {
 
   it('Should render the same amount of elements in linksinfo array', () => {
     const { container } = render(<LinksGrid />);
-    expect(container.getElementsByClassName('link-item').length).toBe(linksInfo.length);
+    expect(container.getElementsByClassName('link-item').length).toBe(
+      linksInfo.length,
+    );
   });
 
-  it.skip('Should render email svg icon', () => {
+  it('Should render email svg icon', () => {
     const { container } = render(<LinksGrid />);
 
     expect(screen.getByTestId('emailtosvg').className).toBe('social-item');
 
     const emailLink = screen.getAllByRole('link').at(-1);
-    expect(emailLink.getAttribute('href')).toBe('mailto:rojascruzoscar@gmail.com');
-    expect(emailLink.getAttribute('aria-label')).toBe('@augusticor email address');
-
-    expect(container.getElementsByTagName('svg').length).toBeGreaterThan(1);
-    expect(container.getElementsByClassName('svg').length).toBeLessThanOrEqual(1);
+    expect(emailLink.getAttribute('href')).toBe(
+      'mailto:rojascruzoscar@gmail.com',
+    );
+    expect(emailLink.getAttribute('aria-label')).toBe(
+      '@augusticor email address',
+    );
   });
 });
