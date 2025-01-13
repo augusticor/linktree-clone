@@ -68,7 +68,7 @@ const HeaderInfo = () => {
 
       <img
         className='image'
-        src='https://ugc.production.linktr.ee/0c8419f4-7675-4b8c-9559-763f0ee61307_q6yLzcez3aeKAMygKya8W8.jpeg?io=true&size=avatar-v3_0'
+        src='https://ugc.production.linktr.ee/fc7d902c-c83b-4851-aed1-fd92b975fe3f_charlesdeluvio-pjAH2Ax4uWk-unsplash--1-.jpeg?io=true&size=avatar-v3_0'
         alt='User profile photography'
       />
       <h1 className='username'>@augusticor</h1>
